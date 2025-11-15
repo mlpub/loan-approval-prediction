@@ -1,0 +1,15 @@
+[project]
+name = "loan-approval"
+version = "0.1.0"
+description = "Loan Approval Prediction"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "scikit-learn", 
+    "pandas", 
+    "numpy", 
+    "pyyaml", 
+    "joblib", 
+    "fastapi", 
+    "uvicorn"
+    ]

@@ -1,0 +1,4 @@
+data_dir: ./data
+filename: credit_risk_dataset.csv
+random_seed: 42
+
