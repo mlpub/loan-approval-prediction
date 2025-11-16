@@ -398,7 +398,7 @@ I do 5 experiments:
 1. E1-1 as baseline.
     Do model training with default parameter value and without data preprocessing like transformation, scaling and features engineering.
 2. E1-2 with class_weight balanced.
-    Because the target column is imbalanced (78%:22%), I added class_balance to compensate for the imbalance.
+    Because the target column is imbalanced (78%:22%), I added class_weight to compensate for the imbalance.
 3. E1-3 with class_weight balanced, log1p transformation.
     The numerical columns are right-skewed with long tails. To reduce the value range and normalize the distribution, I applied a log1p transformation.
 4. E1-4 with class_weight balanced, log1p transformation, standard scaler.
@@ -520,7 +520,7 @@ From this experiments, it can be conclude:
 Decision Tree performance remains nearly constant across preprocessing steps (E2-1 - E2-5).
 
 The baseline model (E2-1) achieves the best recall (0.758) and highest ROC-AUC (0.839).
-Class wright, log transformation, and scaling do not improve results, confirming the tree’s scale-invariant and nonlinear nature.
+Class weight, log transformation, and scaling do not improve results, confirming the tree’s scale-invariant and nonlinear nature.
 
 Using E2-1 as Decision Tree best model.
 
